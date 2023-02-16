@@ -2,6 +2,7 @@
   "name": "Todo App",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://haneefmhmmd.github.io/TodoApp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -20,7 +21,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "json-server": "npx json-server --watch data/db.json --port 8080"
+    "json-server": "npx json-server --watch data/db.json --port 8080",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.0",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.0",
     "prettier": "^2.4.1",
     "sass": "^1.43.4"
